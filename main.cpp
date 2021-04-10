@@ -8,7 +8,7 @@ int main(int argn, char *argc[]){
 	std::cout << "Hello world" <<std::endl;
 	
 	Display display(800, 600, "Hello OpenGL");
-	while (!dislplay.IsClosed()){
+	while (!display.IsClosed()){
 		glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 		

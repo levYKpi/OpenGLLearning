@@ -9,7 +9,7 @@ public:
 	Display(int width, int height, const std::string& title);
 	virtual ~Display();
 	void Update();
-	bool isClosed();
+	bool IsClosed();
 private:
 	SDL_Window* m_window; 
 	SDL_GLContext m_glContext;
