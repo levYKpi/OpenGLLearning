@@ -9,10 +9,15 @@ int main(int argn, char *argc[]){
 	std::cout << "Hello world" <<std::endl;
 	
 	Display display(800, 600, "Hello OpenGL");
-	Shader shader("./res/BaseShader");
+	Shader shader("../res/BaseShader");
 	while (!display.IsClosed()){
 		display.Clear();
 		shader.Bind();
+		glBegin(GL_TRIANGLES);
+		glVertex2f(0,0);
+		glVertex2f(1,0);
+		glVertex2f(0,1);
+		glEnd();
 		display.Update();
 	}
 	return 0;
