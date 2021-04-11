@@ -1,5 +1,5 @@
 #include <iostream>
-#include <GL/glew.h>
+//#include <GL/glew.h>
 #include "Display.h"
 #include "Shader.h"
 
@@ -13,11 +13,11 @@ int main(int argn, char *argc[]){
 	while (!display.IsClosed()){
 		display.Clear();
 		shader.Bind();
-		glBegin(GL_TRIANGLES);
+		/*glBegin(GL_TRIANGLES);
 		glVertex2f(0,0);
 		glVertex2f(1,0);
 		glVertex2f(0,1);
-		glEnd();
+		glEnd();*/
 		display.Update();
 	}
 	return 0;
