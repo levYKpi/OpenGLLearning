@@ -55,3 +55,9 @@ void Display::Update(){
 			m_isClosed = true;
 	}
 }
+
+
+void Display::Clear(){
+	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+	glClear(GL_COLOR_BUFFER_BIT);
+}

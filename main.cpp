@@ -9,9 +9,7 @@ int main(int argn, char *argc[]){
 	
 	Display display(800, 600, "Hello OpenGL");
 	while (!display.IsClosed()){
-		glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-		glClear(GL_COLOR_BUFFER_BIT);
-		
+		display.Clear();
 		display.Update();
 	}
 	return 0;

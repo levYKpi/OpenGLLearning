@@ -10,6 +10,7 @@ public:
 	virtual ~Display();
 	void Update();
 	bool IsClosed();
+	void Clear();
 private:
 	SDL_Window* m_window; 
 	SDL_GLContext m_glContext;
